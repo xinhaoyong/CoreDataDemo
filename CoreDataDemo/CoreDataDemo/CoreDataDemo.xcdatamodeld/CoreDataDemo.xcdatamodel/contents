@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Preson" representedClassName="Preson" syncable="YES" codeGenerationType="class">
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="uid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Uid" inverseName="presons" inverseEntity="Uid" syncable="YES"/>
+    </entity>
+    <entity name="Uid" representedClassName="Uid" syncable="YES" codeGenerationType="class">
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="presons" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Preson" inverseName="uid" inverseEntity="Preson" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Preson" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Uid" positionX="-54" positionY="-9" width="128" height="75"/>
+    </elements>
+</model>
